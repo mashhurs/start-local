@@ -379,7 +379,8 @@ generate_passwords_api_keys() {
   kibana_password="$(random_password)"
   kibana_encryption_key="$(random_password 32)"
   # Get the latest Elasticsearch version
-  es_version="$(get_latest_version)"
+  # es_version="$(get_latest_version)"
+  es_version="9.0.0-SNAPSHOT"
 }
 
 create_env_file() {
